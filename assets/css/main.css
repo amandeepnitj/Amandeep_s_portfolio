@@ -1273,3 +1273,110 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+/* this is for custom project section */
+
+/* LinkedIn-Style Portfolio Cards - Stylish Version with Bullet Points */
+.portfolio .portfolio-item.linkedin-style {
+  margin-bottom: 30px;
+}
+
+.portfolio .linkedin-style .card {
+  border: 2px solid color-mix(in srgb, var(--accent-color), transparent 70%);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1), 0 0 10px rgba(20, 157, 221, 0.2);
+  background: linear-gradient(135deg, var(--surface-color) 0%, color-mix(in srgb, var(--surface-color), var(--accent-color) 10%) 100%);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio .linkedin-style .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15), 0 0 15px rgba(20, 157, 221, 0.3);
+}
+
+.portfolio .linkedin-style .card-body {
+  padding: 30px;
+  position: relative;
+}
+
+.portfolio .linkedin-style .card-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--heading-color);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.portfolio .linkedin-style .card-title i {
+  font-size: 28px;
+  color: var(--accent-color);
+  transition: transform 0.3s ease;
+}
+
+.portfolio .linkedin-style .card:hover .card-title i {
+  transform: scale(1.1);
+}
+
+.portfolio .linkedin-style .card-title:after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  background: var(--accent-color);
+  bottom: -5px;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.portfolio .linkedin-style .card:hover .card-title:after {
+  width: 100px;
+}
+
+.portfolio .linkedin-style .card-text {
+  font-size: 16px;
+  color: color-mix(in srgb, var(--default-color), transparent 10%);
+  margin-bottom: 20px;
+  line-height: 1.8;
+  padding-left: 0;
+  list-style: none;
+}
+
+.portfolio .linkedin-style .card-text li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+}
+
+.portfolio .linkedin-style .card-text li:before {
+  content: '\2022'; /* Bullet character */
+  color: var(--accent-color);
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.portfolio .linkedin-style .linkedin-link {
+  font-size: 16px;
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 16px;
+  border: 1px solid var(--accent-color);
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.portfolio .linkedin-style .linkedin-link i {
+  margin-right: 8px;
+}
+
+.portfolio .linkedin-style .linkedin-link:hover {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  text-decoration: none;
+}
